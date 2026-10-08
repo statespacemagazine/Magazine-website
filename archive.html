@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Articles - Space State</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root { --bg-color: #fdfbf7; --card-bg: #ffffff; --text-color: #1a1a1a; --accent-color: #B129F5; --border-color: #e2d9ce; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; padding-top: 70px; }
+        nav { position: fixed; top: 0; left: 0; width: 100%; background-color: var(--bg-color); border-bottom: 1px solid var(--border-color); z-index: 1000; display: flex; justify-content: center; padding: 10px 0; }
+        .nav-container { width: 100%; max-width: 1200px; display: flex; justify-content: space-around; padding: 0 20px; }
+        .tab-btn { text-decoration: none; font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; color: #666; padding: 8px 16px; border-bottom: 2px solid transparent; transition: all 0.2s ease; }
+        .tab-btn:hover { color: var(--accent-color); }
+        .tab-btn.active { color: var(--text-color); border-bottom: 2px solid var(--accent-color); }
+        header { text-align: center; padding: 40px 20px; border-bottom: 2px solid var(--text-color); max-width: 1200px; margin: 0 auto 40px auto; }
+        header h1 { font-family: 'Lora', serif; font-size: 3rem; letter-spacing: -1px; margin-bottom: 10px; }
+        header p { color: #666; font-size: 1.1rem; }
+        .main-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .content-box { background: var(--card-bg); padding: 40px; border: 1px solid var(--border-color); margin-bottom: 40px; }
+        h2 { font-family: 'Lora', serif; font-size: 2rem; margin-bottom: 25px; padding-bottom: 10px; border-bottom: 1px solid var(--border-color); }
+        .archive-item { padding: 25px 0; border-bottom: 1px dashed var(--border-color); }
+        .archive-item:last-child { border-bottom: none; }
+        .archive-date { font-size: 0.85rem; color: var(--accent-color); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        .archive-title { font-family: 'Lora', serif; font-size: 1.4rem; margin: 5px 0; }
+        .archive-title a { color: var(--text-color); text-decoration: none; font-weight: bold; transition: color 0.2s ease; }
+        .archive-title a:hover { color: var(--accent-color); text-decoration: underline; }
+        .archive-desc { color: #444; font-size: 0.95rem; margin-top: 5px; }
+        footer { text-align: center; padding: 40px 0; border-top: 1px solid var(--border-color); margin-top: 40px; font-size: 0.9rem; color: #666; }
+        @media (max-width: 768px) { body { padding-top: 120px; } .nav-container { flex-wrap: wrap; justify-content: center; gap: 5px; } .tab-btn { font-size: 0.85rem; padding: 6px 12px; } header h1 { font-size: 2.2rem; } .content-box { padding: 20px; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="tab-btn">Home</a>
+            <a href="archive.html" class="tab-btn active">All Weekly Articles</a>
+            <a href="magazine.html" class="tab-btn">Termly Magazine</a>
+            <a href="schedule.html" class="tab-btn">Schedule</a>
+            <a href="about.html" class="tab-btn">About & Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Space State</h1>
+        <p>A complete history of our weekly physics explorations</p>
+    </header>
+
+    <div class="main-container">
+        <section class="content-box">
+            <h2>Weekly Article Archive</h2>
+            
+            <!-- ⬇️ [PASTE NEW ARTICLES DIRECTLY BELOW THIS LINE TO SHOW THEM AT THE TOP] ⬇️ -->
+            
+            <div class="archive-item">
+                <span class="archive-date">8 October 2026</span>
+                <h3 class="archive-title">
+                    <a href="articles/test.html">test</a>
+                </h3>
+                <p class="archive-desc">add text here...</p>
+            </div>
+
+            <!-- ⬆️ [PASTE NEW ARTICLES DIRECTLY ABOVE THIS LINE] ⬆️ -->
+
+        </section>
+    </div>
+
+    <footer><p>&copy; 2026 Space state magazine. All rights reserved.</p></footer>
+
+</body>
+</html>

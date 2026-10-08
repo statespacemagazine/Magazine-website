@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space State Magazine</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;600&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-color: #fdfbf7; --card-bg: #ffffff; --text-color: #1a1a1a; --accent-color: #B129F5; --border-color: #e2d9ce; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; padding-top: 70px; }
+        nav { position: fixed; top: 0; left: 0; width: 100%; background-color: var(--bg-color); border-bottom: 1px solid var(--border-color); z-index: 1000; display: flex; justify-content: center; padding: 10px 0; }
+        .nav-container { width: 100%; max-width: 1200px; display: flex; justify-content: space-around; padding: 0 20px; }
+        .tab-btn { text-decoration: none; font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; color: #666; padding: 8px 16px; border-bottom: 2px solid transparent; transition: all 0.2s ease; }
+        .tab-btn:hover { color: var(--accent-color); }
+        .tab-btn.active { color: var(--text-color); border-bottom: 2px solid var(--accent-color); }
+        header { text-align: center; padding: 40px 20px; border-bottom: 2px solid var(--text-color); max-width: 1200px; margin: 0 auto 40px auto; }
+        header h1 { font-family: 'Lora', serif; font-size: 3rem; letter-spacing: -1px; margin-bottom: 10px; }
+        header p { color: #666; font-size: 1.1rem; }
+        .main-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .content-box { background: var(--card-bg); padding: 40px; border: 1px solid var(--border-color); margin-bottom: 40px; }
+        h2 { font-family: 'Lora', serif; font-size: 2rem; margin-bottom: 25px; padding-bottom: 10px; border-bottom: 1px solid var(--border-color); }
+        .featured-badge { display: inline-block; font-size: 0.75rem; background: var(--accent-color); color: white; padding: 3px 8px; font-weight: 600; text-transform: uppercase; margin-bottom: 10px; border-radius: 3px; }
+        .article-card span { display: block; font-size: 0.85rem; color: #666; font-weight: 600; text-transform: uppercase; margin-top: 5px; }
+        .article-card h3 a { font-family: 'Lora', serif; font-size: 2.2rem; color: var(--text-color); text-decoration: none; margin: 5px 0 15px 0; display: inline-block; line-height: 1.2; }
+        .article-card h3 a:hover { color: var(--accent-color); }
+        .article-card p { color: #333; font-size: 1.1rem; margin-bottom: 20px; }
+        .read-more-btn { display: inline-block; background-color: var(--text-color); color: #fff; text-decoration: none; padding: 10px 20px; font-weight: 600; font-size: 0.9rem; transition: background-color 0.2s; }
+        .read-more-btn:hover { background-color: var(--accent-color); }
+        footer { text-align: center; padding: 40px 0; border-top: 1px solid var(--border-color); margin-top: 40px; font-size: 0.9rem; color: #666; }
+        @media (max-width: 768px) { body { padding-top: 120px; } .nav-container { flex-wrap: wrap; justify-content: center; gap: 5px; } .tab-btn { font-size: 0.85rem; padding: 6px 12px; } header h1 { font-size: 2.2rem; } .content-box { padding: 20px; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="tab-btn active">Home</a>
+            <a href="archive.html" class="tab-btn">All Weekly Articles</a>
+            <a href="magazine.html" class="tab-btn">Termly Magazine</a>
+            <a href="schedule.html" class="tab-btn">Schedule</a>
+            <a href="about.html" class="tab-btn">About & Contact</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Space State</h1>
+        <p>A brief overview of Yorkshire physics and beyond</p>
+    </header>
+    <div class="main-container">
+        <section class="content-box">
+            <div class="featured-badge">Latest Issue</div>
+            
+            <!-- ====== UPDATE THIS CARD ONLY WEEKLY ====== -->
+            <div class="article-card">
+                <span>date</span>
+                <h3><a href="articles/test.html">test</a></h3>
+                <p>short bio</p>
+                <a href="articles/test.html" class="read-more-btn">Read Article &rarr;</a>
+            </div>
+            <!-- ========================================= -->
+
+        </section>
+    </div>
+    <footer><p>&copy; 2026 Space state magazine. All rights reserved.</p></footer>
+</body>
+</html>
